@@ -46,7 +46,7 @@ python extract_features.py --data_dir ./NCT-CRC-HE-100K
 **CRC-100K**: 100,000 colorectal cancer H&E images (224×224, 20× magnification)
 
 <p align="center">
-  <img src="assets/sample_images.png" alt="Sample Images per Class" width="700"/>
+  <img src="assets/sample_images_per_class.png" alt="Sample Images per Class" width="700"/>
 </p>
 
 **9 Tissue Classes:**
