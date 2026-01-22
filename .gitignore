@@ -1,0 +1,92 @@
+# Pretrained weights (too large for git)
+*.pth
+*.pt
+*.torch
+*.ckpt
+*.safetensors
+
+# Checkpoints and model outputs
+checkpoints/
+checkpoints_*/
+outputs/
+runs/
+logs/
+
+# Dataset (too large)
+data/
+NCT-CRC-HE-100K/
+*.zip
+*.tar
+*.tar.gz
+
+# Images (except small assets)
+*.tif
+*.tiff
+# But keep assets folder
+!assets/*.png
+!assets/*.jpg
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# SLURM output files
+*.out
+*.err
+slurm-*.out
+
+# Extracted features (large)
+features/
+embeddings/
+*.h5
+*.hdf5
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+wandb/
+tensorboard/
