@@ -44,8 +44,23 @@ python extract_features.py --data_dir ./NCT-CRC-HE-100K
 ## Dataset
 
 **CRC-100K**: 100,000 colorectal cancer H&E images (224×224, 20× magnification)
-- 9 tissue classes: TUM, STR, NORM, MUS, LYM, ADI, MUC, DEB, BACK
-- Source: [Zenodo](https://zenodo.org/record/1214456)
+
+<p align="center">
+  <img src="assets/sample_images.png" alt="Sample Images per Class" width="700"/>
+</p>
+
+**9 Tissue Classes:**
+- **ADI** (Adipose): Fat tissue - 10,407 images
+- **BACK** (Background): Empty/artifacts - 10,566 images
+- **DEB** (Debris): Tissue debris - 11,512 images
+- **LYM** (Lymphocytes): Immune cells - 11,557 images
+- **MUC** (Mucus): Mucus secretions - 8,896 images
+- **MUS** (Muscle): Smooth muscle - 13,536 images
+- **NORM** (Normal): Normal colon mucosa - 8,763 images
+- **STR** (Stroma): Cancer-associated stroma - 10,446 images
+- **TUM** (Tumor): Adenocarcinoma epithelium - 14,317 images
+
+**Source**: [Zenodo](https://zenodo.org/record/1214456)
 
 ## Model
 
@@ -93,8 +108,8 @@ python visualize.py --features features.pt --method pca
 - Hyperparameter sensitivity increases with smaller datasets
 
 **Training Insights:**
-- Lunit initialization: Loss 9.4 → 8.8 → 3.1 in 30 epochs 
-- Random initialization: Unstable, diverges after epoch 5 
+- Lunit initialization: Loss 9.4 → 8.8 → 5.9 in 3 epochs ✅
+- Random initialization: Unstable, diverges after epoch 5 ❌
 - Global-crops-only: Challenging without multi-crop on small datasets
 
 ## Repository Structure
