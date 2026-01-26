@@ -108,8 +108,7 @@ python visualize.py --features features.pt --method pca
 - Hyperparameter sensitivity increases with smaller datasets
 
 **Training Insights:**
-- Lunit initialization: Loss 9.4 → 8.8 → 5.9 in 3 epochs ✅
-- Random initialization: Unstable, diverges after epoch 5 ❌
+- Random initialization and ImageNet Initialization: Unstable, diverges after epoch 5
 - Global-crops-only: Challenging without multi-crop on small datasets
 
 ## Repository Structure
